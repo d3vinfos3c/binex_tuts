@@ -21,15 +21,11 @@ int main() {
 
     printf("\nYour goal is to modify the variable @ ");
 
-    yellow();
     printf("0x%lx", (long)&buff + 136);
-    reset_color();
 
     printf(" to equal ");
-    
-    yellow();
+
     printf("0xbeefc0de\n\n");
-    reset_color();
 
     printf("This exercises is similar to the previous. You will notice a canary, but shouldn't have to worry about it!\n\n");
 

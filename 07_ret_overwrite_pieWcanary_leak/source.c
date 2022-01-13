@@ -30,15 +30,11 @@ int main() {
 
     printf("\nYour goal is to modify the return pointer @ "); 
 
-    yellow();
     printf("0x%lx", (long)&buff + 40);
-    reset_color();
 
     printf(", to a function called '");
 
-    yellow();
     printf("win");
-    reset_color();
 
     printf("' in the binary.\n\nThis binary has PIE enabled and a canary, you must bypass both via a leak. You can leak both in one shot.\n");
     printf("Especially if you have a good understanding of format strings.\n\n");

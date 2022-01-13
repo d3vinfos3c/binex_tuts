@@ -21,9 +21,7 @@ int main() {
 
     printf("\nYour goal is to modify the variable @ ");
 
-    yellow();
     printf("0x%lx\n\n", (long)&buff + 40);
-    reset_color();
 
     puts("This exercise is to modify the variable using the '%n\\%hn\\%hhn' format specifier.\n\n");
 

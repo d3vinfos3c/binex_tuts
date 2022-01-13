@@ -16,9 +16,7 @@ int main() {
 
     printf("\nYour goal is to modify the variable @ ");
 
-    yellow();
     printf("0x%lx\n\n", (long)&buff + 24);
-    reset_color();
 
     memset(padding, 0xff, sizeof(padding));
     memset(buff, 0x00, sizeof(buff));

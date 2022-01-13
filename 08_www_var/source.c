@@ -19,15 +19,11 @@ int main() {
 
     printf("\nYour goal is to modify the variable @ ");
 
-    yellow();
     printf("0x%lx", (long)&buff + 40);
-    reset_color();
 
     printf(" to equal ");
-    
-    yellow();
+
     printf("0xdeadc0de\n\n");
-    reset_color();
 
     printf("This is a write-what-where exercise, and should not be trivial. This primitive is usually\n");
     printf("leveraged to overwrite entries on the GOT, or any writiable region of memory in the binary!\n\n");

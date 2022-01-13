@@ -23,15 +23,11 @@ int main() {
 
     printf("\nYour goal is to modify the return pointer @ "); 
 
-    yellow();
     printf("0x%lx", (long)&buff + 40);
-    reset_color();
 
     printf(", to a function called '");
 
-    yellow();
     printf("win");
-    reset_color();
 
     printf("' in the binary.\n\n");
     printf("A good tool to use is 'objdump'. Now is the time to learn more about it, if you don't!\n\n");

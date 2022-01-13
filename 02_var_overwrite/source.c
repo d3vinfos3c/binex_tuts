@@ -16,9 +16,7 @@ int main() {
 
     printf("\nYour goal is to modify the variable @ ");
 
-    yellow();
     printf("0x%lx", (long)&buff + 24);
-    reset_color();
 
     printf(" to equal ");
     

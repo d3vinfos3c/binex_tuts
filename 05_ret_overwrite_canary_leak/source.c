@@ -28,21 +28,15 @@ int main() {
 
     printf("\nYour goal is to modify the return pointer @ "); 
 
-    yellow();
     printf("0x%lx", (long)&buff + 40);
-    reset_color();
 
     printf(", to a function called '");
 
-    yellow();
     printf("win");
-    reset_color();
 
     printf("' in the binary.\n\nThis program has a canary @ ");
 
-    yellow();
     printf("%p", canaryAddr);
-    reset_color();
 
     printf(". This time, you must determine it's value yourself, via a leak.\n");
     printf("Lucky for you, there is now a format string vulnerabiltiy for you to leverage!\n\n");

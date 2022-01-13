@@ -26,15 +26,11 @@ int main() {
 
     printf("\nYour goal is to modify the return pointer @ "); 
 
-    yellow();
     printf("0x%lx", (long)&buff + 56);
-    reset_color();
 
     printf(", to a function called '");
 
-    yellow();
     printf("win");
-    reset_color();
 
     printf("' in the binary.\n\n");
 
