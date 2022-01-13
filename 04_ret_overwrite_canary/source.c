@@ -39,15 +39,11 @@ int main() {
     printf("This is the first program you have seen with protections...\n\n");
     printf("This program has a canary (");
 
-    yellow();
     printf("0x%lx", canaryVal);
-    reset_color();
 
     printf(") @ ");
 
-    yellow();
     printf("%p", canaryAddr);
-    reset_color();
 
     printf(". The way to bypass this protection, and still overwrite\n");
     printf("the return pointer, is to append its value to your crafted payload at its relative postion in your payload.\n\n");

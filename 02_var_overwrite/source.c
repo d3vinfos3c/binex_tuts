@@ -19,10 +19,8 @@ int main() {
     printf("0x%lx", (long)&buff + 24);
 
     printf(" to equal ");
-    
-    yellow();
+
     printf("0xdeadc0de\n\n");
-    reset_color();
 
     memset(padding, 0xff, sizeof(padding));
     memset(buff, 0x00, sizeof(buff));
